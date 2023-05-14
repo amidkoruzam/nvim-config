@@ -5,4 +5,6 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 require('lspconfig').tsserver.setup{}
+require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+
 lsp.setup()
